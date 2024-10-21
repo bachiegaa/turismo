@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARCAR VISITA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="visita.css">
+</head>
+<body>
+    <body> <!-- Inicio do corpo da página -->
+
+        ... <!-- Conteúdo da página -->
+      
+        <div vw class="enabled">
+          <div vw-access-button class="active"></div>
+          <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+          </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+          new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+      </body> <!-- Fim do corpo da página -->
+      
+
+    <form><fieldset>
+        <label>Nome Completo</label><br>
+        <input type="text" name="login" placeholder="digite seu nome" required><br><br>
+
+        <label>CPF</label><br>
+        <input type="text" name="cpf" placeholder="digite seu cpf" required><br><br>
+
+        <label>E-mail</label><br>
+        <input type="email" name="email_usuario" placeholder="digite seu e-mail" required><br><br>
+
+        <input type="checkbox" id="termos-e-condicoes" name="termos-e-condicoes" value="sim" required/>
+        <label for="termos-e-condicoes">Aceito os termos e condições</label>
+
+        <button type="submit">Concluir</button>
+    </fieldset></form>
+    
+
+</body>
+</html>
